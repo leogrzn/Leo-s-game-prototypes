@@ -55,11 +55,36 @@ unity build HoldTheMine --target WebGL \
   --output docs/HoldTheMine --allow-dirty-build
 ```
 
+## One-Way Ticket
+
+A third-person survival and escape game. Play as Kwame (Ghana) or Brian (Kenya), two men who answered fake job offers and ended up held in a military camp near the front. Survive the cold and hunger, hide contraband from the guards, dodge drones and shelling, and find a way through the fence and the minefield to the forest. The characters are fictional composites; the recruitment pattern is drawn from news reports.
+
+### ▶ Play in your browser
+
+**https://leogrzn.github.io/Leo-s-game-prototypes/OneWayTicket/**
+
+Use a desktop browser with keyboard and mouse. Click inside the game so the mouse can look around (or drag with the left button). The game works with QWERTY and AZERTY keyboards; press H in game for the full help screen.
+
+### Controls
+
+| Input | Action |
+|---|---|
+| WASD (ZQSD on AZERTY) / arrows | Move |
+| Mouse | Look around |
+| Shift | Run |
+| C | Crouch |
+| E | Take an object, talk, hide or take contraband, feed the stove, sleep in your bed at night |
+| Hold E | Cut the east fence (needs wire cutters) |
+| R | Eat bread |
+| Right click + left click (or F) | Aim and shoot drones (needs the rifle and bullets) |
+| H | Help |
+| P / Esc | Pause |
+
 ## Repository layout
 
 | Path | What it is |
 |---|---|
 | `HoldTheMine/` | Unity 6 project for Hold the Mine |
-| `docs/` | GitHub Pages site (served from `main` / `docs`) |
+| `docs/` | GitHub Pages site (served from `main` / `docs`), home page `docs/index.html` |
 | `docs/HoldTheMine/` | WebGL build of Hold the Mine |
-| `OneWayTicket/` | One-Way Ticket, a single-page web prototype |
+| `docs/OneWayTicket/` | One-Way Ticket, a single-page web game (Three.js) |
