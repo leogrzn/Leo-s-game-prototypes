@@ -12,6 +12,7 @@
   main { width:min(760px,100% - 32px); padding:56px 0; }
   h1 { font-size:2rem; margin:0 0 6px; }
   .lead { color:var(--muted); margin:0 0 36px; }
+  .card + .card { margin-top:20px; }
   .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; }
   .card h2 { margin:0 0 4px; color:var(--gold); font-size:1.5rem; letter-spacing:.02em; }
   .tag { color:var(--muted); font-size:.9rem; margin:0 0 14px; }
@@ -31,7 +32,7 @@
 <body>
 <main>
   <h1>Leo's game prototypes</h1>
-  <p class="lead">Small games made in Unity, playable in the browser.</p>
+  <p class="lead">Small game prototypes, playable in the browser.</p>
 
   <section class="card">
     <h2>Hold the Mine</h2>
@@ -51,6 +52,24 @@
         <tr><td>X / U / M</td><td>Release soldier / upgrade selection / select the mine</td></tr>
         <tr><td>Q / F</td><td>Rally nearby troops / send nearby soldiers to the cursor</td></tr>
         <tr><td>Tab / Esc</td><td>Shop / deselect or pause</td></tr>
+      </table>
+    </details>
+  </section>
+
+  <section class="card">
+    <h2>One-Way Ticket</h2>
+    <p class="tag">Third-person survival and escape · Three.js · plays in the browser</p>
+    <p>They answered a job advert and were sent to a war. Play as Kwame or Brian, two men recruited with fake job offers and held in a camp near the front.
+       Survive the cold, hide what you find from the guards, dodge drones and shelling, and find a way through the fence and the minefield.</p>
+    <a class="play" href="OneWayTicket/">Play in your browser</a>
+    <details>
+      <summary>Controls</summary>
+      <table>
+        <tr><td>WASD (ZQSD on AZERTY) / Mouse</td><td>Move / look around</td></tr>
+        <tr><td>E</td><td>Take, talk, hide items, feed the stove, sleep · hold E to cut the fence</td></tr>
+        <tr><td>R / C / Shift</td><td>Eat / crouch / run</td></tr>
+        <tr><td>Right click + left click</td><td>Aim and shoot (rifle)</td></tr>
+        <tr><td>H / P</td><td>Help / pause</td></tr>
       </table>
     </details>
   </section>
