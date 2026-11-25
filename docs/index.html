@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leo's game prototypes</title>
+<style>
+  :root { --bg:#16130f; --panel:#221d17; --text:#efe8da; --muted:#b5aa96; --gold:#ffc928; --line:#3a3127; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; background:var(--bg); color:var(--text);
+         font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; display:flex; justify-content:center; }
+  main { width:min(760px,100% - 32px); padding:56px 0; }
+  h1 { font-size:2rem; margin:0 0 6px; }
+  .lead { color:var(--muted); margin:0 0 36px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:24px; }
+  .card h2 { margin:0 0 4px; color:var(--gold); font-size:1.5rem; letter-spacing:.02em; }
+  .tag { color:var(--muted); font-size:.9rem; margin:0 0 14px; }
+  .play { display:inline-block; margin-top:16px; padding:12px 22px; border-radius:8px; background:var(--gold);
+          color:#1b1508; font-weight:700; text-decoration:none; }
+  .play:hover { filter:brightness(1.08); }
+  .play:focus-visible { outline:3px solid #fff; outline-offset:3px; }
+  details { margin-top:18px; color:var(--muted); }
+  summary { cursor:pointer; color:var(--text); }
+  table { border-collapse:collapse; margin-top:10px; width:100%; font-size:.95rem; }
+  td { padding:4px 8px; border-top:1px solid var(--line); vertical-align:top; }
+  td:first-child { white-space:nowrap; color:var(--text); font-weight:600; }
+  footer { margin-top:28px; color:var(--muted); font-size:.9rem; }
+  a { color:var(--gold); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Leo's game prototypes</h1>
+  <p class="lead">Small games made in Unity, playable in the browser.</p>
+
+  <section class="card">
+    <h2>Hold the Mine</h2>
+    <p class="tag">Isometric tower defense + management · Unity 6 · WebGL</p>
+    <p>You are the soldier in charge of a gold mine under siege. Fight in real time, place barricades, soldiers and towers,
+       keep the miners fed and morale high, and survive 10 raider waves coming from the open desert, the dense forest and the road.</p>
+    <a class="play" href="HoldTheMine/">Play in your browser</a>
+    <details>
+      <summary>Controls</summary>
+      <table>
+        <tr><td>WASD / Mouse / Left click</td><td>Move / aim / shoot</td></tr>
+        <tr><td>R</td><td>Reload</td></tr>
+        <tr><td>1 / 2 / 3</td><td>Build barricade / soldier / tower (left click place, right click cancel, scroll rotates)</td></tr>
+        <tr><td>4 / 5</td><td>Order food / hire a miner</td></tr>
+        <tr><td>Left click a unit</td><td>Select it (info panel, upgrade)</td></tr>
+        <tr><td>Right click ground</td><td>Send the selected soldier there to hold position</td></tr>
+        <tr><td>X / U / M</td><td>Release soldier / upgrade selection / select the mine</td></tr>
+        <tr><td>Q / F</td><td>Rally nearby troops / send nearby soldiers to the cursor</td></tr>
+        <tr><td>Tab / Esc</td><td>Shop / deselect or pause</td></tr>
+      </table>
+    </details>
+  </section>
+
+  <footer>Desktop browser with keyboard and mouse recommended. Source: <a href="https://github.com/leogrzn/Leo-s-game-prototypes">github.com/leogrzn/Leo-s-game-prototypes</a></footer>
+</main>
+</body>
+</html>
